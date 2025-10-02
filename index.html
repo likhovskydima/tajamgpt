@@ -1,641 +1,306 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="uk">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Tajam likhovskyi dima</title>
-  <!-- google fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-  <!-- bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous">
-  <!-- icons font -->
-  <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
-  <!-- css -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tajam Studio — Digital Experiences</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
-  <!-- Header -->
-  <header class="header" id="header">
-    <!-- Навігаціонна панель -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-      <div class="container">
-        <a class="navbar-brand" href="#"><img src="img/2-layers.png" alt="Logo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+  <header class="site-header" id="home">
+    <div class="container">
+      <nav class="site-nav" aria-label="Головна навігація">
+        <a class="site-nav__logo" href="#home">
+          <img src="img/2-layers.png" alt="Tajam Studio" loading="lazy">
+          <span>Tajam Studio</span>
+        </a>
+        <button class="site-nav__toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+          <span class="sr-only">Відкрити меню</span>
+          <span class="site-nav__toggle-line"></span>
+          <span class="site-nav__toggle-line"></span>
+          <span class="site-nav__toggle-line"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link" href="#header"><strong>Home</strong></a>
-            <a class="nav-item nav-link" href="#our-story"><strong>About</strong></a>
-            <a class="nav-item nav-link" href="#expertise"><strong>Expertise</strong></a>
-            <a class="nav-item nav-link" href="#team"><strong>Teams</strong></a>
-            <a class="nav-item nav-link" href="#our-works"><strong>Works</strong></a>
-            <a class="nav-item nav-link" href="#testimonials"><strong>People Say</strong></a>
-            <a class="nav-item nav-link" href="#contact"><strong>Contact</strong></a>
-            <a class="nav-item nav-link" href="studio.html"><strong>Studio</strong></a>
-          </div>
+        <div class="site-nav__links" id="primary-menu">
+          <a href="#services">Сервіси</a>
+          <a href="#approach">Підхід</a>
+          <a href="#cases">Кейси</a>
+          <a href="#testimonials">Відгуки</a>
+          <a href="#team">Команда</a>
+          <a href="#contact">Контакти</a>
+          <a class="site-nav__cta" href="studio.html">Студія</a>
         </div>
-      </div>
-    </nav>
-    <!-- Slider -->
-    <div class="slider">
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" class="indicator" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" class="indicator" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" class="indicator" data-slide-to="2"></li>
-          <li data-target="#carouselExampleIndicators" class="indicator" data-slide-to="3"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="content-center">
-              <h2>We Are Awesome Creative Agency</h2>
-              <div class="line"></div>
-              <p>This is Photoshop's version of Lorem Ipsum.
-                Proin gravida nibh vel velit auctor aliquet.
-                Aenean sollicitudin, lorem quis bibendum auctor,
-                nisi elit consequat ipsum, nec sagittis sem nibh id elit.
-                Duis sed odio sit amet nibh vulputate cursus
-                a sit amet mauris. Morbi accumsan ipsum velit.</p>
-              <button type="button" class="btn btn-outline-primary mx-auto">Learn More</button>
-            </div>
+      </nav>
+      <div class="hero">
+        <div class="hero__content" data-animate>
+          <span class="pill pill--accent">Цифрова креативна студія</span>
+          <h1>Проєктуємо досвіди, які з першого кадру розповідають про ваш бренд</h1>
+          <p>Збираємо команди дизайнерів, стратегів та інженерів для запуску цифрових продуктів, що виглядають сучасно, працюють швидко та відгукуються аудиторії.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#cases">Переглянути роботи</a>
+            <a class="btn btn--ghost" href="#contact">Запланувати зустріч</a>
           </div>
-          <div class="carousel-item">
-            <div class="content-center">
-              <h2>We Are Awesome Creative Agency</h2>
-              <div class="line"></div>
-              <p>This is Photoshop's version of Lorem Ipsum.
-                Proin gravida nibh vel velit auctor aliquet.
-                Aenean sollicitudin, lorem quis bibendum auctor,
-                nisi elit consequat ipsum, nec sagittis sem nibh id elit.
-                Duis sed odio sit amet nibh vulputate cursus
-                a sit amet mauris. Morbi accumsan ipsum velit.</p>
-              <button type="button" class="btn btn-outline-primary mx-auto">Learn More</button>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="content-center">
-              <h2>We Are Awesome Creative Agency</h2>
-              <div class="line"></div>
-              <p>This is Photoshop's version of Lorem Ipsum.
-                Proin gravida nibh vel velit auctor aliquet.
-                Aenean sollicitudin, lorem quis bibendum auctor,
-                nisi elit consequat ipsum, nec sagittis sem nibh id elit.
-                Duis sed odio sit amet nibh vulputate cursus
-                a sit amet mauris. Morbi accumsan ipsum velit.</p>
-              <button type="button" class="btn btn-outline-primary mx-auto">Learn More</button>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="content-center">
-              <h2>We Are Awesome Creative Agency</h2>
-              <div class="line"></div>
-              <p>This is Photoshop's version of Lorem Ipsum.
-                Proin gravida nibh vel velit auctor aliquet.
-                Aenean sollicitudin, lorem quis bibendum auctor,
-                nisi elit consequat ipsum, nec sagittis sem nibh id elit.
-                Duis sed odio sit amet nibh vulputate cursus
-                a sit amet mauris. Morbi accumsan ipsum velit.</p>
-              <button type="button" class="btn btn-outline-primary mx-auto">Learn More</button>
+          <ul class="hero__highlights">
+            <li>Веб і мобільні продукти з акцентом на бізнес-цілі</li>
+            <li>Глибоке UX-дослідження та дизайн-системи</li>
+            <li>Технології: React, Webflow, Three.js, AI-інтеграції</li>
+          </ul>
+        </div>
+        <div class="hero__visual" data-animate>
+          <div class="hero__glow" aria-hidden="true"></div>
+          <div class="hero__card">
+            <span class="hero__card-title">Що отримуєте</span>
+            <h2>Емоційний бренд і зрозумілий продукт</h2>
+            <p>Ми поєднуємо естетику та функціональність: створюємо сценарії, які ведуть користувача до мети без зайвих кроків.</p>
+            <div class="hero__stats">
+              <div>
+                <span class="hero__stat-value">12+</span>
+                <span class="hero__stat-label">індустрій</span>
+              </div>
+              <div>
+                <span class="hero__stat-value">92%</span>
+                <span class="hero__stat-label">клієнтів повертаються</span>
+              </div>
             </div>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
       </div>
     </div>
   </header>
 
-  <!-- Content -->
-  <content class="content" id="content">
-    <!-- our story -->
-    <section class="our-story" id="our-story">
+  <main>
+    <section class="section" id="services">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-4 col-xs-12 our-story__img">
-            <img src="img/Replace_with_your_logo.png" alt="" class="img-fluid">
-          </div>
-          <div class="col-sm-7 col-xs-12 ml-sm-auto">
-            <div class="our-story__block-flex">
-              <h1 class="mb-3">OUR STORY</h1>
-              <p>This is Photoshop's version of Lorem Ipsum.
-                Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-                lorem quis bibendum auctor, nisi elit consequat ipsum,
-                nec sagittis sem nibh id elit. Duis sed odio sit
-                amet nibh vulputate cursus
-                <br><br>
-                Morbi accumsan ipsum velit. Nam nec tellus a odio
-                tincidunt auctor a ornare odio. Sed non mauris
-                vitae erat consequat auctor eu in elit.
-                Class aptent taciti sociosqu ad litora torquent
-                per conubia nostra, per inceptos himenaeos.</p>
-              <button type="button" class="btn btn-outline-primary mx-auto mt-4">Learn More</button>
-            </div>
-          </div>
+        <div class="section__header" data-animate>
+          <span class="pill">Сервіси</span>
+          <h2>Закриваємо повний цикл — від ідеї до зростаючого продукту</h2>
+          <p>Працюємо як продовження вашої команди або як автономний партнер: проводимо дослідження, проектуємо досвід, пишемо код та супроводжуємо після запуску.</p>
+        </div>
+        <div class="grid grid--three">
+          <article class="card" data-animate>
+            <h3>Стратегія та аналітика</h3>
+            <p>Формуємо продуктову дорожню карту, проводимо якісні та кількісні дослідження, налаштовуємо метрики.</p>
+            <ul>
+              <li>Discovery спринти</li>
+              <li>Customer journey</li>
+              <li>Аналітика та KPI</li>
+            </ul>
+          </article>
+          <article class="card" data-animate>
+            <h3>Дизайн та бренд</h3>
+            <p>Створюємо візуальні системи, прототипи та UI-кіти, що масштабуються на веб, мобайл та маркетинг.</p>
+            <ul>
+              <li>UX/UI дизайн</li>
+              <li>Айдентика та дизайн-системи</li>
+              <li>Моушн та мікроанімації</li>
+            </ul>
+          </article>
+          <article class="card" data-animate>
+            <h3>Розробка та запуск</h3>
+            <p>Вибудовуємо технічну архітектуру, інтегруємо CRM і сервісні платформи, автоматизуємо процеси.</p>
+            <ul>
+              <li>Front-end та back-end</li>
+              <li>Інтеграції та API</li>
+              <li>Моніторинг та підтримка</li>
+            </ul>
+          </article>
         </div>
       </div>
     </section>
-    <!-- our-story-video -->
-    <section class="our-story-video d-flex align-items-center" id="our-story-video">
-      <div class="container">
-        <div class="row ">
-          <div class="col-12 d-flex justify-content-center">
-            <!-- видео -->
-            <div class="our-story-video__block-flex" data-toggle="modal" data-target=".bd-example-modal-lg">
-              <div class="our-story-video__block-img mb-4">
-                <img src="img/play.png" alt="Play" class="img-fluid">
-              </div>
-              <h3><strong>Watch our story</strong></h3>
-            </div>
-            <!-- модальное окно -->
-            <div class="modal fade bd-example-modal-lg mt-5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                  <div class="embed-responsive embed-responsive-21by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/8CdcCD5V-d8" frameborder="0"
-                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- expertise -->
-    <section class="expertise" id="expertise">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 d-flex flex-column align-items-center">
-            <h1>Expertise</h1>
-            <p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
-            <div class="exp-line"></div>
-          </div>
-        </div>
-        <!-- cards top -->
-        <div class="row mt-5 line-bottom">
-          <div class="col-12">
-            <div class="card-group">
-              <!-- card-1 -->
-              <div class="col-sm-4 col-xs-12 pr-sm-0 line-right">
-                <div class="card d-flex flex-column align-items-center pt-4 pb-sm-3 pb-md-3 pb-lg-5 border-0">
-                  <div class="block-img mb-4">
-                    <img src="img/11.png" alt="">
-                  </div>
-                  <div class="card-content">
-                    <div class="card-title mb-3"> <strong>WEB DESIGN & DEVELOPMENT</strong> </div>
-                    <p class="mx-2">This is Photoshop's version of Lorem Ipsum.
-                      Proin gravida nibh vel velit auctor aliquet Aenean.</p>
-                  </div>
-                </div>
-              </div>
-              <!-- card-2 -->
-              <div class="col-sm-4 col-xs-12 pr-sm-0 line-right">
-                <div class="card d-flex flex-column align-items-center pt-4 pb-sm-3 pb-md-3 pb-lg-5 border-0">
-                  <div class="block-img mb-4">
-                    <img src="img/12.png" height="50px" alt="">
-                  </div>
-                  <div class="card-content">
-                    <div class="card-title mb-3"> <strong>BRANDING IDENTITY</strong> </div>
-                    <p class="mx-2">This is Photoshop's version of Lorem Ipsum.
-                      Proin gravida nibh vel velit auctor aliquet Aenean.</p>
-                  </div>
-                </div>
-              </div>
-              <!-- card-3 -->
-              <div class="col-sm-4 col-xs-12 pl-sm-0">
-                <div class="card d-flex flex-column align-items-center pt-4 pb-sm-3 pb-md-3 pb-lg-5 border-0">
-                  <div class="block-img mb-4">
-                    <img src="img/13.png" alt="">
-                  </div>
-                  <div class="card-content">
-                    <div class="card-title mb-3"> <strong>BRANDING IDENTITY</strong> </div>
-                    <p class="mx-2">This is Photoshop's version of Lorem Ipsum.
-                      Proin gravida nibh vel velit auctor aliquet Aenean.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- cards bottom -->
-        <div class="row">
-          <div class="col-12">
-            <div class="card-group">
-              <!-- card-4 -->
-              <div class="col-sm-4 col-xs-12 pr-sm-0 line-right">
-                <div class="card d-flex flex-column align-items-center pt-4 pb-xs-3 border-0">
-                  <div class="block-img mb-4">
-                    <img src="img/14.png" alt="">
-                  </div>
-                  <div class="card-content">
-                    <div class="card-title mb-3"> <strong>SEARCH ENGINE OPTIMIZATION</strong> </div>
-                    <p class="mx-2">This is Photoshop's version of Lorem Ipsum.
-                      Proin gravida nibh vel velit auctor aliquet Aenean.</p>
-                  </div>
-                </div>
-              </div>
-              <!-- card-5 -->
-              <div class="col-sm-4 col-xs-12 pr-sm-0 line-right">
-                <div class="card d-flex flex-column align-items-center pt-4 pb-xs-3 border-0">
-                  <div class="block-img mb-4">
-                    <img src="img/15.png" height="50px" alt="">
-                  </div>
-                  <div class="card-content">
-                    <div class="card-title mb-3"> <strong>GAME DEVELOPMENT</strong> </div>
-                    <p class="mx-2">This is Photoshop's version of Lorem Ipsum.
-                      Proin gravida nibh vel velit auctor aliquet Aenean.</p>
-                  </div>
-                </div>
-              </div>
-              <!-- card-6 -->
-              <div class="col-sm-4 col-xs-12 pl-sm-0">
-                <div class="card d-flex flex-column align-items-center pt-4 pb-xs-3 border-0">
-                  <div class="block-img mb-4">
-                    <img src="img/16.png" height="50px" alt="">
-                  </div>
-                  <div class="card-content">
-                    <div class="card-title mb-3"> <strong>MADE WITH LOVE</strong> </div>
-                    <p class="mx-2">This is Photoshop's version of Lorem Ipsum.
-                      Proin gravida nibh vel velit auctor aliquet Aenean.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- team -->
-    <section class="team" id="team">
-      <div class="container">
-        <!-- title -->
-        <div class="row">
-          <div class="col-12">
-            <div class="col-12 d-flex flex-column align-items-center">
-              <h1>MEET OUR AMAZING TEAM</h1>
-              <p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
-              <div class="exp-line mb-5"></div>
-            </div>
-          </div>
-        </div>
-        <!-- cards -->
-        <div class="row">
-          <div class="col-lg-3 col-sm-6 col-md-3">
-            <figure>
-              <img src="img/21.jpg" alt="">
-              <figcaption>
-                <h5 class="mt-3">SEMF UCUK</h5>
-                <p class="mb-3">CEO & FOUNDER</p>
-              </figcaption>
-            </figure>
-          </div>
-          <div class="col-lg-3 col-sm-6 col-md-3">
-            <figure>
-              <img src="img/22.jpg" alt="">
-              <figcaption>
-                <h5 class="mt-3">DIK ADALIN</h5>
-                <p class="mb-3">ENGINEERING</p>
-              </figcaption>
-            </figure>
-          </div>
-          <div class="col-lg-3 col-sm-6 col-md-3">
-            <figure>
-              <img src="img/23.jpg" alt="">
-              <figcaption>
-                <h5 class="mt-3">JENG KOL</h5>
-                <p class="mb-3">DESIGNER</p>
-              </figcaption>
-            </figure>
-          </div>
-          <div class="col-lg-3 col-sm-6 col-md-3">
-            <figure>
-              <img src="img/24.jpg" alt="">
-              <figcaption>
-                <h5 class="mt-3">PET ROMAK</h5>
-                <p class="mb-3">MARKETING</p>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-        <!-- button -->
-        <div class="row team-but">
-          <div class="col d-flex flex-column justify-content-center">
-            <p>Become part of our dream team, let’s join us ! </p>
-            <button type="button" class="btn btn-outline-primary mx-auto mt-2">Learn More</button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- our-works -->
-    <section class="our-works" id="our-works">
-      <div class="container">
-        <div class="row pb-5 our-works__position d-flex justify-content-between">
-          <div class="col-lg-3 col-md-4 col-sm-12 our-works__position">
-            <h1 class="our-works__title">OUR WORKS</h1>
-          </div>
-          <div class="col-lg-4 col-md-5 col-sm-12 our-works__position">
-            <a href="#" class="our-works__link d-flex">
-              <h6>See All Project in dribbble
-                <i class="fa fa-angle-right pl-1" aria-hidden="true"></i></h6>
-            </a>
-          </div>
-        </div>
-      </div>
-      <!-- projects -->
-      <div class="container-fluid mb-5">
-        <!-- projects top -->
-        <div class="row">
-          <div class="col-lg-2 col-sm-4 px-0">
-            <img src="img/Sire.png" alt="">
-          </div>
-          <div class="col-lg-2 col-sm-4 px-0">
-            <img src="img/TemnoSire.png" alt="">
-          </div>
-          <div class="col-lg-2 col-sm-4 px-0">
-            <img src="img/Sire.png" alt="">
-          </div>
-          <div class="col-lg-2 col-sm-4 px-0">
-            <img src="img/TemnoSire.png" alt="">
-          </div>
-          <div class="col-lg-2 col-sm-4 px-0">
-            <img src="img/Sire.png" alt="">
-          </div>
-          <div class="col-lg-2 col-sm-4 px-0">
-            <img src="img/TemnoSire.png" alt="">
-          </div>
-        </div>
-        <!-- projects bottom -->
-        <div class="row">
-          <div class="col-lg-2 col-sm-4 px-0">
-            <img src="img/TemnoSire.png" alt="">
-          </div>
-          <div class="col-lg-2 col-sm-4 px-0">
-            <img src="img/Sire.png" alt="">
-          </div>
-          <div class="col-lg-2 col-sm-4 px-0">
-            <img src="img/TemnoSire.png" alt="">
-          </div>
-          <div class="col-lg-2 col-sm-4 px-0">
-            <img src="img/Sire.png" alt="">
-          </div>
-          <div class="col-lg-2 col-sm-4 px-0">
-            <img src="img/TemnoSire.png" alt="">
-          </div>
-          <div class="col-lg-2 col-sm-4 px-0">
-            <img src="img/Sire.png" alt="">
-          </div>
-        </div>
-      </div>
-      <!-- button -->
-      <div class="container">
-        <div class="row">
-          <div class="col our-works__btn">
-            <button type="button" class="btn btn-outline-primary">Load More</button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Testimonials -->
-    <section class="testimonials" id="testimonials">
-      <!-- slider -->
-      <div id="carouselExampleIndicators1" class="carousel slide pt-5" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active testimonials__slider-img-1"></li>
-          <li data-target="#carouselExampleIndicators1" data-slide-to="1" class="testimonials__slider-img-2"></li>
-          <li data-target="#carouselExampleIndicators1" data-slide-to="2" class="testimonials__slider-img-3"></li>
-          <li data-target="#carouselExampleIndicators1" data-slide-to="3" class="testimonials__slider-img-4"></li>
-          <li data-target="#carouselExampleIndicators1" data-slide-to="4" class="testimonials__slider-img-5"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="content-center">
-              <p class="mb-5">This is Photoshop's version of Lorem Ipsum.
-                Proin gravida nibh vel velit auctor aliquet.
-                Aenean sollicitudin, lorem quis bibendum auctor,
-                nisi elit consequat ipsum, nec sagittis
-                sem nibh id elit. Duis sed odio sit amet
-                nibh vulputate cursus a sit amet mauris.
-                Morbi accumsan ipsum velit. Nam nec
-                tellus a odio tincidunt auctor a ornare odio.
-                Sed non mauris vitae erat consequat auctor eu in elit.
-              </p>
-              <h5 class="testimonials__name"><strong>KHOLISY MOTHER OF DRAGONS</strong></h5>
-              <h4 class="testimonials__job">SILNAY JENSHINA</h4>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="content-center">
-              <p class="mb-5">This is Photoshop's version of Lorem Ipsum.
-                Proin gravida nibh vel velit auctor aliquet.
-                Aenean sollicitudin, lorem quis bibendum auctor,
-                nisi elit consequat ipsum, nec sagittis
-                sem nibh id elit. Duis sed odio sit amet
-                nibh vulputate cursus a sit amet mauris.
-                Morbi accumsan ipsum velit. Nam nec
-                tellus a odio tincidunt auctor a ornare odio.
-                Sed non mauris vitae erat consequat auctor eu in elit.
-              </p>
-              <h5 class="testimonials__name"><strong>JOHN SNOW</strong></h5>
-              <h4 class="testimonials__job">BASTARD</h4>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="content-center">
-              <p class="mb-5">This is Photoshop's version of Lorem Ipsum.
-                Proin gravida nibh vel velit auctor aliquet.
-                Aenean sollicitudin, lorem quis bibendum auctor,
-                nisi elit consequat ipsum, nec sagittis
-                sem nibh id elit. Duis sed odio sit amet
-                nibh vulputate cursus a sit amet mauris.
-                Morbi accumsan ipsum velit. Nam nec
-                tellus a odio tincidunt auctor a ornare odio.
-                Sed non mauris vitae erat consequat auctor eu in elit.
-              </p>
-              <h5 class="testimonials__name"><strong>CERSEI LANNISTER</strong></h5>
-              <h4 class="testimonials__job">MY BROTHER IS MY LOVE</h4>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="content-center">
-              <p class="mb-5">This is Photoshop's version of Lorem Ipsum.
-                Proin gravida nibh vel velit auctor aliquet.
-                Aenean sollicitudin, lorem quis bibendum auctor,
-                nisi elit consequat ipsum, nec sagittis
-                sem nibh id elit. Duis sed odio sit amet
-                nibh vulputate cursus a sit amet mauris.
-                Morbi accumsan ipsum velit. Nam nec
-                tellus a odio tincidunt auctor a ornare odio.
-                Sed non mauris vitae erat consequat auctor eu in elit.
-              </p>
-              <h5 class="testimonials__name"><strong>JOFFREY BARATHEON</strong></h5>
-              <h4 class="testimonials__job">ALDEBARAN</h4>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="content-center">
-              <p class="mb-5">This is Photoshop's version of Lorem Ipsum.
-                Proin gravida nibh vel velit auctor aliquet.
-                Aenean sollicitudin, lorem quis bibendum auctor,
-                nisi elit consequat ipsum, nec sagittis
-                sem nibh id elit. Duis sed odio sit amet
-                nibh vulputate cursus a sit amet mauris.
-                Morbi accumsan ipsum velit. Nam nec
-                tellus a odio tincidunt auctor a ornare odio.
-                Sed non mauris vitae erat consequat auctor eu in elit.
-              </p>
-              <h5 class="testimonials__name"><strong>ARYA STARK</strong></h5>
-              <h4 class="testimonials__job">BEZLIKAY</h4>
-            </div>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </section>
-    <!-- contact -->
-    <section class="contact" id="contact">
-      <div class="container">
-        <div class="row">
-          <!-- form left -->
-          <div class="col-lg-6 padding">
-            <h1 class="pb-3">GIVE US A GOOD NEWS</h1>
-            <form action="#" class="d-flex flex-column">
-              <input type="text" placeholder="name" class="name mb-3 px-2">
-              <input type="email" placeholder="Email" class="email mb-3 px-2">
-              <input type="text" placeholder="Subject" class="subject mb-3 px-2">
-              <textarea name="message" id="message" class="message mb-3 px-2" placeholder="Your Massage"></textarea>
-              <button type="button" class="btn btn-outline-primary"><strong>Submit</strong></button>
-            </form>
-          </div>
-          <!-- brands right -->
-          <div class="col-lg-6 pl-lg-5">
-            <h1 class="pb-3 ml-lg-5">OUR HAPPY CLIENT</h1>
-            <div class="contact__brands d-sm-flex">
-              <div class="contact__block-img mb-4 d-flex flex-column align-items-center mx-lg-5">
-                <img src="img/41.png" alt="" class="contact__img-1 mb-5 mt-2">
-                <img src="img/43.png" alt="" class="contact__img-2 mb-5">
-                <img src="img/45.png" alt="" class="contact__img-3 mb-5">
-                <img src="img/47.png" alt="" class="contact__img-4 mb-5">
-                <img src="img/49.png" width="109px" alt="" class="contact__img-5 ">
-              </div>
-              <div class="contact__block-img mb-4 d-flex flex-column align-items-center ml-sm-5">
-                <img src="img/42.png" alt="" class="contact__img-6 mb-5 mt-2">
-                <img src="img/44.png" alt="" class="contact__img-7 mb-5">
-                <img src="img/46.png" alt="" class="contact__img-8 mb-5">
-                <img src="img/48.png" alt="" class="contact__img-9 mb-5">
-                <img src="img/50.png" alt="" class="contact__img-10 ">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </content>
 
-  <!-- footer -->
-  <footer class="footer pb-5" id="footer">
+    <section class="section section--accent" id="approach">
+      <div class="container">
+        <div class="section__header" data-animate>
+          <span class="pill">Підхід</span>
+          <h2>Прозорий процес, де ви бачите кожен крок</h2>
+          <p>Комунікація тримається на регулярних демо, звітах та понятних артефактах, тому команда клієнта завжди в курсі.</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline__item" data-animate>
+            <span class="timeline__step">01</span>
+            <div>
+              <h3>Занурення</h3>
+              <p>Вивчаємо продукт, аудиторію та цілі бізнесу. Проводимо воркшопи та формуємо гіпотези.</p>
+            </div>
+          </div>
+          <div class="timeline__item" data-animate>
+            <span class="timeline__step">02</span>
+            <div>
+              <h3>Концепція</h3>
+              <p>Готуємо прототипи, тестуємо сценарії з реальними користувачами, визначаємо дизайн-напрям.</p>
+            </div>
+          </div>
+          <div class="timeline__item" data-animate>
+            <span class="timeline__step">03</span>
+            <div>
+              <h3>Реалізація</h3>
+              <p>Збираємо інтерфейси, пишемо код, налаштовуємо аналітику, готуємо матеріали до запуску.</p>
+            </div>
+          </div>
+          <div class="timeline__item" data-animate>
+            <span class="timeline__step">04</span>
+            <div>
+              <h3>Зростання</h3>
+              <p>Вимірюємо показники, тестуємо поліпшення, нарощуємо функціонал та адаптуємо продукт під нові ринки.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="cases">
+      <div class="container">
+        <div class="section__header" data-animate>
+          <span class="pill">Кейси</span>
+          <h2>Показуємо дизайн, що працює на конверсію та впізнаваність</h2>
+          <p>Нижче — короткі історії, де ми перетворили складні продукти на зрозумілі сервіси та медіа.</p>
+        </div>
+        <div class="grid grid--cases">
+          <article class="case-card" data-animate>
+            <div class="case-card__tag">Fintech</div>
+            <h3>Neobank Flow</h3>
+            <p>Редизайн мобільного банкінгу з упором на ощадні сценарії та аналітику витрат. Результат — +37% до активних користувачів за 3 місяці.</p>
+            <a class="case-card__link" href="#contact">Хочу такий результат</a>
+          </article>
+          <article class="case-card" data-animate>
+            <div class="case-card__tag">Web3</div>
+            <h3>Metaverse Expo</h3>
+            <p>Імммерсивний сайт конференції з 3D-крафтом, інтерактивними сесіями та системою квитків. 18k реєстрацій із 120 країн.</p>
+            <a class="case-card__link" href="#contact">Обговорити проєкт</a>
+          </article>
+          <article class="case-card" data-animate>
+            <div class="case-card__tag">EduTech</div>
+            <h3>Sensei Academy</h3>
+            <p>Побудували платформу для менторських програм з персональними дашбордами та AI-наставництвом. NPS виріс до 72.</p>
+            <a class="case-card__link" href="#contact">Давайте створювати</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--split" id="testimonials">
+      <div class="container">
+        <div class="section__header" data-animate>
+          <span class="pill">Відгуки</span>
+          <h2>Партнери люблять нашу чіткість, дизайн і підтримку</h2>
+          <p>Ми будуємо довгострокові відносини, де спільні перемоги важливіші за разовий реліз.</p>
+        </div>
+        <div class="testimonials">
+          <figure class="testimonial" data-animate>
+            <blockquote>
+              «Tajam — єдина команда, яка змогла поєднати складний функціонал із людським тоном. Ми запустили новий продукт без авралу».
+            </blockquote>
+            <figcaption>
+              <strong>Олена Леміш</strong>
+              <span>VP Product, Flow</span>
+            </figcaption>
+          </figure>
+          <figure class="testimonial" data-animate>
+            <blockquote>
+              «Вони мислять системно: кожен артефакт, презентація, макет — продумані. Після редизайну нам стало простіше презентувати сервіс інвесторам».
+            </blockquote>
+            <figcaption>
+              <strong>Андрій Ткаченко</strong>
+              <span>CEO, Sensei Academy</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="team">
+      <div class="container">
+        <div class="section__header" data-animate>
+          <span class="pill">Команда</span>
+          <h2>Кожен напрям веде ліди, які глибоко в темі</h2>
+          <p>Ми віримо у прозору комунікацію та щоденний контакт з клієнтами. Всі, хто працює над проєктом, доступні у спільному робочому просторі.</p>
+        </div>
+        <div class="grid grid--team">
+          <article class="team-card" data-animate>
+            <img src="img/21.jpg" alt="Леся, керівниця дизайну">
+            <div>
+              <h3>Леся Кравець</h3>
+              <p>Design Lead · куратор дизайн-систем та motion-напрямку</p>
+            </div>
+          </article>
+          <article class="team-card" data-animate>
+            <img src="img/22.jpg" alt="Максим, технічний директор">
+            <div>
+              <h3>Максим Бондар</h3>
+              <p>Tech Director · архітектура, безпека, AI-інтеграції</p>
+            </div>
+          </article>
+          <article class="team-card" data-animate>
+            <img src="img/23.jpg" alt="Ірина, продюсерка">
+            <div>
+              <h3>Ірина Поліщук</h3>
+              <p>Delivery Producer · комунікація, процеси, OKR</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--accent" id="contact">
+      <div class="container section--accent__inner">
+        <div class="contact-intro" data-animate>
+          <span class="pill">Почати</span>
+          <h2>Розкажіть про ідею, а ми допоможемо зробити її відчутною</h2>
+          <p>Опишіть коротко ваш продукт, цільову аудиторію та очікуваний результат. Повернемося з пропозицією протягом двох днів.</p>
+          <div class="contact-intro__details">
+            <div>
+              <strong>Формати співпраці</strong>
+              <span>Discovery, product squad, консалтинг, запуск під ключ</span>
+            </div>
+            <div>
+              <strong>Контакти</strong>
+              <a href="mailto:hello@tajam.studio">hello@tajam.studio</a>
+              <span>+38 (099) 123 45 67</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" data-animate>
+          <label>
+            Ім’я
+            <input type="text" name="name" placeholder="Як до вас звертатись?" required>
+          </label>
+          <label>
+            Email або Telegram
+            <input type="text" name="email" placeholder="you@example.com / @username" required>
+          </label>
+          <label>
+            Опис запиту
+            <textarea name="message" rows="4" placeholder="Розкажіть про продукт, терміни та очікування" required></textarea>
+          </label>
+          <button class="btn btn--primary" type="submit">Надіслати запит</button>
+          <span class="contact-form__note">Натискаючи кнопку, ви погоджуєтесь з обробкою персональних даних.</span>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
     <div class="container">
-      <!-- footer items -->
-      <div class="row">
-        <!-- footer left -->
-        <div class="footer__flex col-lg-4">
-          <div class="footer__block-logo">
-            <a href="#">
-              <img src="img/2-layers.png" alt="logo">
-            </a>
-          </div>
-          <p class="footer__text mt-4">
-            lorem quis bibendum auctor,
-            nisi elit consequat ipsum, nec
-            sagittis sem nibh elit.
-            Duis sed odio sit amet
-            auctror a ornare odio non mauris
-            vitae erat in elit
-          </p>
-        </div>
-        <!-- footer center -->
-        <div class="footer__flex col-lg-4">
-          <h1 class="footer__titles mb-lg-5"> <strong>OUR STUDIO</strong> </h1>
-          <div class="footer__about-us d-flex">
-            <div class="icon-nav mr-3">
-              <img src="img/nav.png" alt="">
-            </div>
-            <p class="footer__text">
-              Ruko cucruk, Jl. Radio luar
-              dalem jos No.12 - 13,
-              Kalideres - Jakarta Barat
-              11480 - Indonesia
-            </p>
-          </div>
-          <div class="footer__phone d-flex">
-            <div class="icon-phone mr-3">
-              <img src="img/tell.png" alt="">
-            </div>
-            <p class="footer__text">
-              +38(050)-010-22-14
-            </p>
-          </div>
-        </div>
-        <!-- footer right -->
-        <div class="footer__flex col-lg-4">
-          <h1 class="footer__titles mb-5"><strong>STAY IN TOUCH</strong></h1>
-          <div class="footer-send-message d-flex">
-            <input class="footer__input px-2 mr-2" type="text" placeholder="Subscribe our newsletter">
-            <button class="tellegram"><img src="img/telega.png" alt="send"></button>
-          </div>
-          <div class="footer__icons d-flex justify-content-between mt-4">
-            <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
-            <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
-            <i class="fa fa-dribbble fa-2x" aria-hidden="true"></i>
-            <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
-            <i class="fa fa-google-plus fa-2x" aria-hidden="true"></i>
-            <i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i>
-          </div>
+      <div class="site-footer__brand">
+        <img src="img/2-layers.png" alt="Tajam Studio">
+        <div>
+          <h2>Tajam Studio</h2>
+          <p>Цифрові продукти, що створюють емоцію і результат.</p>
         </div>
       </div>
-      <!-- footer copyright -->
-      <div class="row mt-5">
-        <div class="col-lg-5 footer__links">
-          <a href="#">HELP</a>
-          <a href="#">TERMS & CONDITION</a>
-          <a href="#" class="mr-0">PRIVACY</a>
-        </div>
-        <div class="col-lg-4 footer__copyright ml-lg-auto">
-          <p class="footer__text mb-0">Copyright © 2018 - Likhovskyi Dima.</p>
-        </div>
+      <div class="site-footer__links">
+        <a href="#services">Сервіси</a>
+        <a href="#approach">Підхід</a>
+        <a href="#cases">Кейси</a>
+        <a href="#team">Команда</a>
+        <a href="#contact">Контакт</a>
       </div>
+      <p class="site-footer__copyright">© <span id="current-year"></span> Tajam Studio. Всі права захищені.</p>
     </div>
   </footer>
 
-  <!-- add bootstrap -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
-  <!-- add js -->
-  <script src="js/script.js"></script>
-
+  <script src="js/script.js" defer></script>
 </body>
-
 </html>
