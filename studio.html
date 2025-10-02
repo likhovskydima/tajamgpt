@@ -1,327 +1,213 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="uk">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Tajam Studio — Creative Partnerships</title>
-  <!-- google fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-  <!-- bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <!-- icons font -->
-  <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
-  <!-- css -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tajam Studio — Команда та культура</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
-  <!-- Header -->
-  <header class="header header--inner" id="header">
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-      <div class="container">
-        <a class="navbar-brand" href="index.html"><img src="img/2-layers.png" alt="Logo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+  <header class="site-header site-header--inner" id="top">
+    <div class="container">
+      <nav class="site-nav" aria-label="Головна навігація">
+        <a class="site-nav__logo" href="index.html#home">
+          <img src="img/2-layers.png" alt="Tajam Studio" loading="lazy">
+          <span>Tajam Studio</span>
+        </a>
+        <button class="site-nav__toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+          <span class="sr-only">Відкрити меню</span>
+          <span class="site-nav__toggle-line"></span>
+          <span class="site-nav__toggle-line"></span>
+          <span class="site-nav__toggle-line"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link" href="index.html#header"><strong>Home</strong></a>
-            <a class="nav-item nav-link" href="index.html#our-story"><strong>About</strong></a>
-            <a class="nav-item nav-link" href="index.html#expertise"><strong>Expertise</strong></a>
-            <a class="nav-item nav-link" href="index.html#team"><strong>Teams</strong></a>
-            <a class="nav-item nav-link" href="index.html#our-works"><strong>Works</strong></a>
-            <a class="nav-item nav-link" href="index.html#testimonials"><strong>People Say</strong></a>
-            <a class="nav-item nav-link" href="index.html#contact"><strong>Contact</strong></a>
-            <a class="nav-item nav-link active" href="studio.html"><strong>Studio</strong></a>
+        <div class="site-nav__links" id="primary-menu">
+          <a href="index.html#services">Сервіси</a>
+          <a href="index.html#approach">Підхід</a>
+          <a href="index.html#cases">Кейси</a>
+          <a href="index.html#team">Команда</a>
+          <a href="index.html#contact">Контакти</a>
+          <a class="site-nav__cta is-active" href="studio.html">Студія</a>
+        </div>
+      </nav>
+      <div class="hero hero--inner">
+        <div class="hero__content" data-animate>
+          <span class="pill pill--accent">Команда & культура</span>
+          <h1>Ми створили місце, де технології і естетика говорять однією мовою</h1>
+          <p>В Tajam Studio ми збираємо людей, які готові занурюватися в продукт так само глибоко, як і клієнт. Наша мета — робити сервіси, якими хочеться користуватися щодня, і команди, які хочеться обіймати.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#culture">Принципи роботи</a>
+            <a class="btn btn--ghost" href="#people">Знайомтеся з нами</a>
+          </div>
+        </div>
+        <div class="hero__visual" data-animate>
+          <div class="hero__glow" aria-hidden="true"></div>
+          <div class="hero__card hero__card--inner">
+            <span class="hero__card-title">Студії</span>
+            <h2>Київ · Берлін</h2>
+            <p>Працюємо гібридно: ресерч, дизайн і стратегія — у київському просторі, R&D та партнерські колаби — у Берліні.</p>
+            <div class="hero__stats">
+              <div>
+                <span class="hero__stat-value">45</span>
+                <span class="hero__stat-label">людей у команді</span>
+              </div>
+              <div>
+                <span class="hero__stat-value">18</span>
+                <span class="hero__stat-label">країн клієнтів</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </nav>
-
-    <div class="inner-hero content-center">
-      <h1>Immersive experiences for bold brands</h1>
-      <div class="line"></div>
-      <p class="inner-hero__text">We transform ambitious ideas into meaningful digital products, guiding every project from the
-        initial spark to launch and beyond. Discover how our studio blends strategy, design and technology to build
-        remarkable journeys.</p>
-      <a class="btn btn-outline-primary mx-auto" href="#overview">Start the tour</a>
     </div>
   </header>
 
-  <main class="content content--inner" id="content">
-    <!-- overview -->
-    <section class="our-story services-overview" id="overview">
+  <main>
+    <section class="section" id="culture">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-5 col-sm-12 services-overview__image text-center text-md-right">
-            <img src="img/Replace_with_your_logo.png" alt="Studio" class="img-fluid">
-          </div>
-          <div class="col-md-6 col-sm-12 ml-md-auto">
-            <div class="our-story__block-flex">
-              <h1 class="mb-3">STUDIO DNA</h1>
-              <p>Every collaboration begins with listening. We take the time to understand your audience, uncover
-                opportunities and define the goals that will guide our partnership. Our multidisciplinary team combines
-                design thinking with technical expertise to deliver products that feel effortless and perform brilliantly
-                across every touchpoint.</p>
-              <p class="mb-0">From research and workshops to prototyping and launch, we create transparent roadmaps that keep
-                you informed and inspired at every milestone.</p>
-            </div>
-          </div>
+        <div class="section__header" data-animate>
+          <span class="pill">Наші принципи</span>
+          <h2>Культура прозорості, відповідальності й сміливих експериментів</h2>
+          <p>Ми віримо, що якісний продукт народжується там, де команда довіряє одне одному, має свободу пробувати та оперує фактами, а не припущеннями.</p>
+        </div>
+        <div class="grid grid--three">
+          <article class="card" data-animate>
+            <h3>Ко-креація з клієнтом</h3>
+            <p>Працюємо в спільних робочих просторах, проводимо щотижневі демо та відкриваємо доступ до наших інструментів.</p>
+          </article>
+          <article class="card" data-animate>
+            <h3>Дизайн, що вирішує задачі</h3>
+            <p>У нас є власна research-група, яка валідує гіпотези та формує інсайти ще до того, як з’являються перші макети.</p>
+          </article>
+          <article class="card" data-animate>
+            <h3>Технології без страху</h3>
+            <p>Прототипуємо на AI-інструментах, запускаємо пілоти на low-code, а в продакшн виводимо вже протестовані рішення.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- services grid -->
-    <section class="expertise services-grid" id="capabilities">
+    <section class="section section--accent" id="people">
       <div class="container">
-        <div class="row">
-          <div class="col-12 d-flex flex-column align-items-center">
-            <h1>What we craft</h1>
-            <p>Purposeful solutions that shape memorable brands and products</p>
-            <div class="exp-line"></div>
-          </div>
+        <div class="section__header" data-animate>
+          <span class="pill">Люди Tajam</span>
+          <h2>Кожна команда має свого ліда, який відповідає за результат</h2>
+          <p>Ми збираємо крос-функціональні групи: стратег, дизайн-лід, інженер, продюсер. Тому кожен проєкт має баланс між креативом, технологіями та процесами.</p>
         </div>
-        <div class="row mt-5">
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="services-grid__card text-center">
-              <div class="services-grid__icon mb-4">
-                <img src="img/11.png" alt="Digital Products">
-              </div>
-              <h5 class="mb-3"><strong>Digital Product Design</strong></h5>
-              <p>We define user journeys, craft intuitive interfaces and produce scalable design systems that evolve with
-                your product.</p>
+        <div class="grid grid--team">
+          <article class="team-card" data-animate>
+            <img src="img/31.png" alt="Аліна, стратегічна партнерка">
+            <div>
+              <h3>Аліна Михайленко</h3>
+              <p>Partner, Strategy · веде discovery, фасилітує воркшопи, відповідає за продуктовий roadmap.</p>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="services-grid__card text-center">
-              <div class="services-grid__icon mb-4">
-                <img src="img/12.png" alt="Brand Experience">
-              </div>
-              <h5 class="mb-3"><strong>Brand Experience</strong></h5>
-              <p>From naming and narrative to visual expression, we craft cohesive identities that resonate on every
-                platform and drive recognition.</p>
+          </article>
+          <article class="team-card" data-animate>
+            <img src="img/32.png" alt="Роман, директор з продукту">
+            <div>
+              <h3>Роман Чумак</h3>
+              <p>Product Director · синхронізує дизайн і розробку, впроваджує OKR і системи аналітики.</p>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="services-grid__card text-center">
-              <div class="services-grid__icon mb-4">
-                <img src="img/16.png" alt="Engineering">
-              </div>
-              <h5 class="mb-3"><strong>Engineering Partnerships</strong></h5>
-              <p>Our engineers collaborate closely with your team to deliver reliable, performant solutions with clean
-                architecture and maintainable code.</p>
+          </article>
+          <article class="team-card" data-animate>
+            <img src="img/33.png" alt="Наталя, креативна директорка">
+            <div>
+              <h3>Наталя Іллєнко</h3>
+              <p>Creative Director · розвиває айдентику брендів, курує моушн і контент-напрям.</p>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="services-grid__card text-center">
-              <div class="services-grid__icon mb-4">
-                <img src="img/14.png" alt="Growth">
-              </div>
-              <h5 class="mb-3"><strong>Growth & Optimization</strong></h5>
-              <p>We continuously test, measure and refine digital products to improve retention, conversion and overall
-                customer delight.</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="services-grid__card text-center">
-              <div class="services-grid__icon mb-4">
-                <img src="img/13.png" alt="Immersive Media">
-              </div>
-              <h5 class="mb-3"><strong>Immersive Media</strong></h5>
-              <p>Interactive installations, AR storytelling and cinematic motion graphics that pull audiences into your
-                narrative.</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="services-grid__card text-center">
-              <div class="services-grid__icon mb-4">
-                <img src="img/15.png" alt="Support">
-              </div>
-              <h5 class="mb-3"><strong>Launch Support</strong></h5>
-              <p>Training, documentation and campaign assets ensure your team can share the story and scale the product
-                with confidence.</p>
-            </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- approach -->
-    <section class="approach" id="process">
+    <section class="section" id="spaces">
       <div class="container">
-        <div class="row">
-          <div class="col-12 d-flex flex-column align-items-center">
-            <h1>Our collaborative rhythm</h1>
-            <p>Every engagement is anchored by clear communication and measurable progress</p>
-            <div class="exp-line"></div>
-          </div>
+        <div class="section__header" data-animate>
+          <span class="pill">Простір</span>
+          <h2>Студія, де хочеться творити</h2>
+          <p>Наші простори — це поєднання технологічних лабораторій, затишних зон для концентрації та місць для зустрічей з клієнтами.</p>
         </div>
-        <div class="row approach__list">
-          <div class="col-md-3 col-sm-6 approach__item">
-            <h3>Discover</h3>
-            <p>We immerse ourselves in your world, interviewing stakeholders and analysing insights to uncover impactful
-              opportunities.</p>
-          </div>
-          <div class="col-md-3 col-sm-6 approach__item">
-            <h3>Define</h3>
-            <p>Together we prioritise initiatives, align success metrics and shape a roadmap that keeps everyone moving in
-              sync.</p>
-          </div>
-          <div class="col-md-3 col-sm-6 approach__item">
-            <h3>Design</h3>
-            <p>Rapid prototyping and iterative feedback loops translate ideas into delightful experiences grounded in real
-              user needs.</p>
-          </div>
-          <div class="col-md-3 col-sm-6 approach__item">
-            <h3>Deliver</h3>
-            <p>With an eye on quality and performance, we ship resilient solutions, support launch and monitor impact after
-              release.</p>
-          </div>
+        <div class="grid grid--three studio-spaces">
+          <article class="card" data-animate>
+            <h3>Discovery Hall</h3>
+            <p>Мультимедійний зал для спільних сесій та спринтів. Тут ми проводимо roadmap-воркшопи й стратегічні презентації.</p>
+          </article>
+          <article class="card" data-animate>
+            <h3>Prototype Lab</h3>
+            <p>Лабораторія для швидких експериментів з AI, AR/VR, голосовими інтерфейсами. Усе підключено до нашої design system.</p>
+          </article>
+          <article class="card" data-animate>
+            <h3>Care Corner</h3>
+            <p>Зона підтримки команди: зустрічі з ментором, ментальні практики, бібліотека та камерні івенти для спільноти.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- case studies -->
-    <section class="case-studies" id="case-studies">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 d-flex flex-column align-items-center">
-            <h1>Featured collaborations</h1>
-            <p>A glimpse at the partnerships that keep us inspired</p>
-            <div class="exp-line"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="case-studies__card">
-              <img src="img/Sire.png" alt="Voyager" class="img-fluid">
-              <div class="case-studies__body">
-                <h5>Voyager Airlines</h5>
-                <p>Designing a unified booking journey across mobile and kiosk platforms boosted conversions by 34%.</p>
-              </div>
+    <section class="section section--accent" id="career">
+      <div class="container section--accent__inner">
+        <div class="contact-intro" data-animate>
+          <span class="pill">Кар'єра</span>
+          <h2>Приєднуйтесь до команди, якщо любите поєднувати дизайн і технології</h2>
+          <p>Ми шукаємо людей, яким небайдуже, як продукт впливатиме на життя інших. У Tajam ви матимете прозорі процеси, mentorship та можливість впливати на рішення.</p>
+          <div class="contact-intro__details">
+            <div>
+              <strong>Поточні відкриття</strong>
+              <span>Senior Product Designer · Middle Front-end Engineer · Motion Artist</span>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="case-studies__card">
-              <img src="img/TemnoSire.png" alt="Halo" class="img-fluid">
-              <div class="case-studies__body">
-                <h5>Halo Health</h5>
-                <p>We built an intuitive telehealth experience that connects specialists and patients within seconds.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="case-studies__card">
-              <img src="img/Sire.png" alt="Aurora" class="img-fluid">
-              <div class="case-studies__body">
-                <h5>Aurora Labs</h5>
-                <p>A flexible design system empowered the internal team to scale new product lines in half the time.</p>
-              </div>
+            <div>
+              <strong>Контакт для резюме</strong>
+              <a href="mailto:team@tajam.studio">team@tajam.studio</a>
+              <span>Slack ком'юніті після скринінгу</span>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- call to action -->
-    <section class="cta-banner" id="collaborate">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-8 col-md-7">
-            <h2>Ready to shape what comes next?</h2>
-            <p>Tell us about your vision and we will assemble the perfect team to bring it to life.</p>
-          </div>
-          <div class="col-lg-4 col-md-5 text-md-right text-center">
-            <a href="mailto:hello@tajamstudio.com" class="btn btn-outline-primary">Let’s collaborate</a>
-          </div>
-        </div>
+        <form class="contact-form" data-animate>
+          <label>
+            Ім’я
+            <input type="text" name="candidate-name" placeholder="Ваше ім’я" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="candidate-email" placeholder="name@domain.com" required>
+          </label>
+          <label>
+            Посилання на портфоліо / CV
+            <input type="url" name="candidate-portfolio" placeholder="https://">
+          </label>
+          <label>
+            Коротке повідомлення
+            <textarea name="candidate-message" rows="4" placeholder="Чим хочете займатися в Tajam?" required></textarea>
+          </label>
+          <button class="btn btn--primary" type="submit">Надіслати</button>
+          <span class="contact-form__note">Ми відповімо протягом 5 робочих днів. Дані використовуємо лише для рекрутингу.</span>
+        </form>
       </div>
     </section>
   </main>
 
-  <!-- footer -->
-  <footer class="footer pb-5" id="footer">
+  <footer class="site-footer">
     <div class="container">
-      <div class="row">
-        <div class="footer__flex col-lg-4">
-          <div class="footer__block-logo">
-            <a href="index.html">
-              <img src="img/2-layers.png" alt="logo">
-            </a>
-          </div>
-          <p class="footer__text mt-4">
-            lorem quis bibendum auctor,
-            nisi elit consequat ipsum, nec
-            sagittis sem nibh elit.
-            Duis sed odio sit amet
-            auctror a ornare odio non mauris
-            vitae erat in elit
-          </p>
-        </div>
-        <div class="footer__flex col-lg-4">
-          <h1 class="footer__titles mb-lg-5"> <strong>OUR STUDIO</strong> </h1>
-          <div class="footer__about-us d-flex">
-            <div class="icon-nav mr-3">
-              <img src="img/nav.png" alt="">
-            </div>
-            <p class="footer__text">
-              Ruko cucruk, Jl. Radio luar
-              dalem jos No.12 - 13,
-              Kalideres - Jakarta Barat
-              11480 - Indonesia
-            </p>
-          </div>
-          <div class="footer__phone d-flex">
-            <div class="icon-phone mr-3">
-              <img src="img/tell.png" alt="">
-            </div>
-            <p class="footer__text">
-              +38(050)-010-22-14
-            </p>
-          </div>
-        </div>
-        <div class="footer__flex col-lg-4">
-          <h1 class="footer__titles mb-5"><strong>STAY IN TOUCH</strong></h1>
-          <div class="footer-send-message d-flex">
-            <input class="footer__input px-2 mr-2" type="text" placeholder="Subscribe our newsletter">
-            <button class="tellegram"><img src="img/telega.png" alt="send"></button>
-          </div>
-          <div class="footer__icons d-flex justify-content-between mt-4">
-            <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
-            <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
-            <i class="fa fa-dribbble fa-2x" aria-hidden="true"></i>
-            <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
-            <i class="fa fa-google-plus fa-2x" aria-hidden="true"></i>
-            <i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i>
-          </div>
+      <div class="site-footer__brand">
+        <img src="img/2-layers.png" alt="Tajam Studio">
+        <div>
+          <h2>Tajam Studio</h2>
+          <p>Команда, що створює сміливі цифрові продукти.</p>
         </div>
       </div>
-      <div class="row mt-5">
-        <div class="col-lg-5 footer__links">
-          <a href="#">HELP</a>
-          <a href="#">TERMS & CONDITION</a>
-          <a href="#" class="mr-0">PRIVACY</a>
-        </div>
-        <div class="col-lg-4 footer__copyright ml-lg-auto">
-          <p class="footer__text mb-0">Copyright © 2018 - Likhovskyi Dima.</p>
-        </div>
+      <div class="site-footer__links">
+        <a href="index.html#services">Сервіси</a>
+        <a href="index.html#approach">Підхід</a>
+        <a href="index.html#cases">Кейси</a>
+        <a href="index.html#team">Команда</a>
+        <a href="#career">Кар'єра</a>
       </div>
+      <p class="site-footer__copyright">© <span id="current-year"></span> Tajam Studio. Всі права захищені.</p>
     </div>
   </footer>
 
-  <!-- add bootstrap -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  <!-- add js -->
-  <script src="js/script.js"></script>
+  <script src="js/script.js" defer></script>
 </body>
-
 </html>

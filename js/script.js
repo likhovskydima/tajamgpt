@@ -1,79 +1,91 @@
-// закріплення хедера
-const navbar = document.querySelector(".navbar");
-const STICK_POINT = 100; // відстань для фікса хедера
+const body = document.body;
+const nav = document.querySelector('.site-nav');
+const navToggle = document.querySelector('.site-nav__toggle');
+const navLinksContainer = document.querySelector('.site-nav__links');
+const navLinks = navLinksContainer ? navLinksContainer.querySelectorAll('a[href^="#"]') : [];
 
-function handleSticky() {
-  if (window.scrollY > STICK_POINT) {
-    navbar.style.position = "fixed";
-    navbar.style.top = "0";
-    navbar.style.left = "0";
-    navbar.style.width = "100%";
-    navbar.style.backgroundColor = "rgba(52, 43, 87, 0.9)";
-    navbar.style.borderBottom = "1px solid rgba(0, 224, 208, .2)";
-    navbar.style.zIndex = "999";
-  } else {
-    navbar.style.position = "";
-    navbar.style.backgroundColor = "";
-    navbar.style.borderBottom = "";
-    navbar.style.zIndex = "";
-  }
+function toggleNav() {
+  const isOpen = navLinksContainer.classList.toggle('is-open');
+  navToggle.setAttribute('aria-expanded', String(isOpen));
+  body.classList.toggle('nav-open', isOpen);
 }
-window.addEventListener("scroll", handleSticky);
-handleSticky(); // ініціалізація 
 
+if (navToggle && navLinksContainer) {
+  navToggle.addEventListener('click', toggleNav);
+}
 
-
-
-// карусель
-$('.carousel').carousel({ interval: 2500 });
-
-// ПЕРЕХІД ПО КНОПКАМ
-const menuLinks = document.querySelectorAll('.navbar-nav a[href^="#"]');
-
-menuLinks.forEach(link => {
-  link.addEventListener("click", function (e) {
-    e.preventDefault();
-    const id = this.getAttribute("href").slice(1);
-    const target = document.getElementById(id);
+navLinks.forEach(link => {
+  link.addEventListener('click', event => {
+    const targetId = link.getAttribute('href').slice(1);
+    const target = document.getElementById(targetId);
     if (!target) return;
 
-    const navH = navbar.offsetHeight || 0;
-    const targetTop = target.getBoundingClientRect().top + window.pageYOffset - navH;
+    event.preventDefault();
+    const yOffset = nav.offsetHeight || 0;
+    const elementPosition = target.getBoundingClientRect().top + window.pageYOffset - yOffset + 1;
 
     window.scrollTo({
-      top: Math.max(targetTop, 0),
-      behavior: "smooth"
+      top: elementPosition,
+      behavior: 'smooth'
     });
+
+    if (navLinksContainer.classList.contains('is-open')) {
+      toggleNav();
+    }
   });
 });
 
-// підсвітка активного пункта
-const sections = Array.from(menuLinks)
-  .map(a => {
-    const id = a.getAttribute("href").slice(1);
-    const el = document.getElementById(id);
-    return el ? { id, el } : null;
-  })
-  .filter(Boolean);
+const sections = Array.from(document.querySelectorAll('section[id]'));
 
-function highlightMenu() {
-  const navH = navbar.offsetHeight || 0;
-  const pos = window.scrollY + navH + 10; // невеликий відступ
+function highlightCurrentSection() {
+  if (!nav || !navLinksContainer) return;
+  const scrollPos = window.scrollY + (nav.offsetHeight || 0) + 12;
 
-  let currentId = sections.length ? sections[0].id : null;
+  sections.forEach(section => {
+    const id = section.id;
+    const link = navLinksContainer.querySelector(`a[href="#${id}"]`);
+    if (!link) return;
 
-  sections.forEach(({ id, el }) => {
-    const top = el.offsetTop;
-    const bottom = top + el.offsetHeight;
-    if (pos >= top && pos < bottom) currentId = id;
-  });
+    const sectionTop = section.offsetTop;
+    const sectionBottom = sectionTop + section.offsetHeight;
+    const isActive = scrollPos >= sectionTop && scrollPos < sectionBottom;
 
-  menuLinks.forEach(a => {
-    const isActive = a.getAttribute("href") === `#${currentId}`;
-    // Підсвічування 
-    a.style.color = isActive ? "rgba(0, 224, 208, 1)" : "rgba(255, 255, 255, 1)";
-    a.style.fontWeight = isActive ? "700" : "400";
+    link.classList.toggle('is-active', isActive);
   });
 }
-window.addEventListener("scroll", highlightMenu);
-window.addEventListener("load", highlightMenu);
+
+window.addEventListener('scroll', highlightCurrentSection);
+window.addEventListener('load', highlightCurrentSection);
+
+const observerOptions = {
+  threshold: 0.2,
+  rootMargin: '0px 0px -40px 0px'
+};
+
+const animatedElements = document.querySelectorAll('[data-animate]');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('is-visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, observerOptions);
+
+animatedElements.forEach(el => observer.observe(el));
+
+const currentYearEl = document.getElementById('current-year');
+if (currentYearEl) {
+  currentYearEl.textContent = new Date().getFullYear();
+}
+
+function closeNavOnResize() {
+  if (window.innerWidth > 820 && navLinksContainer.classList.contains('is-open')) {
+    navLinksContainer.classList.remove('is-open');
+    navToggle.setAttribute('aria-expanded', 'false');
+    body.classList.remove('nav-open');
+  }
+}
+
+window.addEventListener('resize', closeNavOnResize);
